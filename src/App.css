@@ -7,6 +7,10 @@
   height: 40vmin;
 }
 
+.rc-progress-circle {
+  width: 200px;
+}
+
 .App-header {
   background-color: burlywood;
   min-height: 100vh;
