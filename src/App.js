@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ApplicationForm from "./ApplicationForm";
-import Summary from "./Summary";
+import Home from "./Home";
 import NotFount from "./components/NotFound";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import "./App.css";
@@ -10,10 +10,13 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Link to="/form">Application Form</Link>
+          {/* <ApplicationForm /> */}
+
+          <Link to="/">Home</Link>
 
           <Switch>
             <Route exact path="/form" component={ApplicationForm} />
+            <Route exact path="/" component={Home} />
             <Route component={NotFount} />
           </Switch>
         </div>

@@ -29,13 +29,6 @@ export default class ApplicationForm extends React.Component {
   }
 
   handleClick(e) {
-    e.preventDefault();
-    console.log(e.target.value);
-    console.log(this.state.fullName);
-    console.log(this.state.email);
-    console.log(this.state.phoneNumber);
-    console.log(this.state.salary);
-    // console.log("THIS IS TRIGGERED");
   }
   render() {
     return (
