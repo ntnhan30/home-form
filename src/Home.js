@@ -10,7 +10,9 @@ class Home extends Component {
     return (
       <div className="Home">
         <h1>Welcome Home</h1>
-        <Link to="/form">Application Form</Link>
+        <button class="AppButton">
+          <Link to="/form">Application Form</Link>
+        </button>
       </div>
     );
   }

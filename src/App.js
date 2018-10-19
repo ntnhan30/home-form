@@ -11,9 +11,9 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          {/* <ApplicationForm /> */}
-
-          <Link to="/">Home</Link>
+          <header className="App-header">
+            <Link to="/">Home</Link>
+          </header>
 
           <Switch>
             <Route exact path="/form" component={ApplicationForm} />
