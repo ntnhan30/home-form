@@ -4,6 +4,7 @@ import Home from "./Home";
 import NotFount from "./components/NotFound";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import "./App.css";
+import "./queries.css";
 
 class App extends Component {
   render() {

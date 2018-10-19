@@ -11,27 +11,31 @@
   width: 200px;
 }
 
-.App-header {
-  background-color: burlywood;
-  min-height: 100vh;
+.applicationDiv {
   display: flex;
-  /* flex-direction: column; */
-  /* align-items: center; */
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
+  flex-direction: row;
+  align-items: flex-start;
+  border: 1px red solid;
+  align-content: center;
+  margin: 10%;
 }
 
-.App-link {
-  color: #61dafb;
+.sumPro {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border: 1px blue solid;
+  align-content: center;
+  margin: 1%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.form {
+  padding-top: 30px;
+  border: 1px black solid;
+  margin: 10%;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.summary {
+  border: 1px green solid;
+  margin: 10%;
 }

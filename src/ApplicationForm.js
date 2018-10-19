@@ -2,6 +2,11 @@ import React from "react";
 import { Button, Form, FormGroup, Label, Input } from "reactstrap";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Summary from "./Summary";
+import {
+  Row,
+  Col,
+  Container,
+} from "reactstrap";
 
 export default class ApplicationForm extends React.Component {
   constructor(props) {
@@ -32,9 +37,13 @@ export default class ApplicationForm extends React.Component {
   }
   render() {
     return (
-      <div>
-        <Form>
-          <FormGroup>
+      <div class="applicationDiv">
+      {/* <Container> */}
+        {/* <Row> */}
+          {/* <Col xs="6" sm="4"> */}
+       <div className="form">
+        <Form >
+          <FormGroup >
             <Label>Full Name</Label>
             <Input
               type="text"
@@ -135,9 +144,11 @@ export default class ApplicationForm extends React.Component {
           </FormGroup>
           <Button onClick={e => this.handleClick(e)}>Submit</Button>
         </Form>
-        <Router>
-          <div>
-            {/* <Link to="/summary">Summary</Link> */}
+        </div>
+        {/* </Col> */}
+        {/* <Col xs="6" sm="4">  */}
+          <div className="summary">   
+
             <Summary
               fullname={this.state.fullName}
               phoneNumber={this.state.phoneNumber}
@@ -146,7 +157,9 @@ export default class ApplicationForm extends React.Component {
               counter={this.state.counter}
             />
           </div>
-        </Router>
+          {/* </Col> */}
+          {/* </Row> */}
+          {/* </Container> */}
       </div>
     );
   }
